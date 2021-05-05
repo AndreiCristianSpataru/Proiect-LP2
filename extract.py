@@ -11,3 +11,5 @@ for elem in data:
     elem['Organizator']
     elem['Amplasamente']
     print(f"Nr/Data:{elem['nr_data']} | Org:{elem['Organizator']} | Amplasamente:{elem['Amplasamente']}")
+with open("output.json", "w") as f:
+    f.write(json.dumps(data))
